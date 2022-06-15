@@ -4,18 +4,18 @@
     <div class="top_bar d-none d-md-block">
         <div class="container">
             <div class="row p-1">
-                <div class="col-md-6">
+                <div class="col-md-6 myTitle">
                     الثلاثاء 15 ذو القعده 1443 ه - 14 يونيو 2022
                 </div>
                 <div class="col-md-6 text-start">
 
                 @if (App::getLocale() == 'rrr')
-                    <a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
+                    <a class="nav-link myTitle" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
                         عربي
                     </a>
                 @else
-                    <a href="{{ LaravelLocalization::getLocalizedURL('fr') }}">
-                        <img width="20px" height="20px" src="assets/img/france.png" alt=""> francais
+                    <a class="myTitle" href="{{ LaravelLocalization::getLocalizedURL('fr') }}">
+                        <img width="20px" height="20px" src="assets/img/france.png" alt=""> Français
                     </a>
                 @endif
 
@@ -90,17 +90,12 @@
                                             @endforeach
                                         </div>
                                     </div>
-                                    <!-- for mobile -->
-                                    <ul class="list-unstyled d-md-none">
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>3</li>
-                                    </ul>
+
                                 </div>
                             </li>
 
                             <li class="nav-item d-md-none">
-                                <a class="nav-link active"
+                                <a class="nav-link"
                                     href="{{ route('category_posts.frontEnd', $category->id) }}">
                                     {{ $category->name }}
                                 </a>
@@ -150,6 +145,19 @@
 
                         </div>
                     </li> --}}
+
+                    <li class="nav-item">
+                        @if (App::getLocale() == 'fr')
+                            <a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
+                                عربي
+                            </a>
+                        @else
+                            <a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('fr') }}">
+                                Français
+                            </a>
+                        @endif
+                    </li>
+                    
 
                 </ul>
             </div>

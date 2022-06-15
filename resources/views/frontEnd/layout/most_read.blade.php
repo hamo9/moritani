@@ -38,7 +38,7 @@
                                                 style="background-image: url('assets/images/{{ $item->photo }}')">
                                             </div>
                                         </div>
-                                        <div class="col-6 p-0">
+                                        <div class="col-6 p-0 myTitle">
                                             <p>{{ $item->title }}</p>
                                             <p class="small_text"><i
                                                     class="bi bi-clock"></i>{{ \Carbon\Carbon::parse($item->created_at)->diffForhumans() }}

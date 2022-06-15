@@ -4,7 +4,7 @@ a{
     color: black;
   }
 
-  
+
 .bg-primary{
     background-color: #32C36C !important;
 }
@@ -21,6 +21,8 @@ a{
 
 .for_new_post .post_content{
     right: 0px;
+    text-align: right;
+    direction: rtl;
   }
 
 
@@ -122,3 +124,45 @@ a{
     margin-left: 0;
 }
 
+
+
+.post_content{
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+
+
+/* start reports section */
+.main_post_for_reports{
+    width: calc(100% - 20px);
+    position: relative;
+    height: 70vh;
+    background-position: fixed;
+    background-size: cover;
+    margin: 10px;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .main_post_for_reports .overray{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .main_post_for_reports .post_content{
+    position: absolute;
+    bottom: 5%;
+    right: 0px;
+    z-index: 3;
+    padding: 2%;
+    color: #fff;
+
+  }

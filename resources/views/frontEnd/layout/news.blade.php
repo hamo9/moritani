@@ -31,7 +31,7 @@
                                             <i class="bi bi-clock"></i>
                                             <span>{{ \Carbon\Carbon::parse($item->created_at)->diffForhumans() }}</span>
                                         </div>
-                                        <h5>{{ $item->title }}</h5>
+
                                     </div>
 
                                     <div class="row">
@@ -42,6 +42,7 @@
 
                                         </div>
                                         <div class="col-8">
+                                            <h5>{{ $item->title }}</h5>
                                             <div class="desc">
 
                                                 <p>{{ substr($item->body, 0, 140) }} ... </p>

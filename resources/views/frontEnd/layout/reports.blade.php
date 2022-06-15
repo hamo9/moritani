@@ -42,9 +42,9 @@
                                         style="background-image: url('assets/images/{{ $item->photo }}');">
                                         <div class="overray"></div>
                                         <div class="post_content">
-                                            <h6 class="mb-4">
+                                            <h6 class="mb-4 myTitle">
                                                 {{ \Carbon\Carbon::parse($item->created_at)->diffForhumans() }}</h6>
-                                            <h3>
+                                            <h3 class="myTitle">
                                                 {{ $item->title }}
                                             </h3>
                                         </div>

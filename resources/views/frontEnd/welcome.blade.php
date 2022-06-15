@@ -101,14 +101,14 @@
 
                 <!-- Categories widget-->
                 <div class="card mb-4">
-                    <div class="card-header">{{ __('welcome.Categories') }}</div>
+                    <div class="card-header myTitle">{{ __('welcome.Categories') }}</div>
                     <div class="card-body">
                         <div class="row">
                             @if(isset($categories))
                                 @foreach($categories as $category)
                                     <div class="col-sm-6">
-                                        <ul class="list-unstyled mb-0">
-                                        <li><a href="{{ route('category_posts.frontEnd',$category->id) }}">{{ $category->name }}</a></li>
+                                        <ul class="list-unstyled mb-0 myTitle">
+                                        <li class="mt-2"><a href="{{ route('category_posts.frontEnd',$category->id) }}">{{ $category->name }}</a></li>
                                         </ul>
                                     </div>
                                 @endforeach
