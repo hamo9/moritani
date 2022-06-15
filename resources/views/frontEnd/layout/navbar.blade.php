@@ -49,7 +49,7 @@
             <div class="collapse navbar-collapse m-auto text-left" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0 custom_nav_bar">
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('welcome.frontEnd') }}">
+                        <a class="nav-link active nav-item-phone" href="{{ route('welcome.frontEnd') }}">
                             {{ __('navbar.home') }}
                         </a>
                     </li>
@@ -73,7 +73,7 @@
 
                                             @foreach ($posts as $post)
                                                 <div class="col-md-3 text-black">
-                                                    <div class="p-2">
+                                                    <a  href="{{ route('post.frontEnd', $post->id) }}" class="p-2">
                                                         <div class="my_box_img" style="background-image: url('assets/images/{{ $post->photo }}');"></div>
 
                                                         <h6 class="mt-2">{{ $post->title }}</h6>
@@ -84,7 +84,7 @@
                                                                 <a href="{{ route('post.frontEnd',$post->id) }}">{{ $post->sub_category->name }}</a>
                                                             @endif
                                                         </div>
-                                                    </div>
+                                                    </a>
 
                                                 </div>
                                             @endforeach
@@ -94,7 +94,7 @@
                                 </div>
                             </li>
 
-                            <li class="nav-item d-md-none">
+                            <li class="nav-item d-md-none nav-item-phone">
                                 <a class="nav-link"
                                     href="{{ route('category_posts.frontEnd', $category->id) }}">
                                     {{ $category->name }}
@@ -157,7 +157,7 @@
                             </a>
                         @endif
                     </li>
-                    
+
 
                 </ul>
             </div>

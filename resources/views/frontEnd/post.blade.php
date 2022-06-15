@@ -184,7 +184,7 @@
                                         </div>
                                     </div>
                                     <div class="col-6 p-0">
-                                        <p>{{ $item->title }}</p>
+                                        <p class="myTitle">{{ $item->title }}</p>
                                         <p class="small_text"><i
                                                 class="bi bi-clock p-1"></i>{{ \Carbon\Carbon::parse($item->created_at)->diffForhumans() }}
                                         </p>
