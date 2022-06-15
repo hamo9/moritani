@@ -166,3 +166,8 @@ a{
     color: #fff;
 
   }
+
+
+  .rtl_text_right{
+    text-align: left !important;
+  }

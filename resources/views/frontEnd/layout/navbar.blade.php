@@ -7,17 +7,18 @@
                 <div class="col-md-6 myTitle">
                     الثلاثاء 15 ذو القعده 1443 ه - 14 يونيو 2022
                 </div>
-                <div class="col-md-6 text-start">
+                <div class="col-md-6 text-end rtl_text_right">
 
-                @if (App::getLocale() == 'rrr')
-                    <a class="nav-link myTitle" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
-                        عربي
-                    </a>
-                @else
-                    <a class="myTitle" href="{{ LaravelLocalization::getLocalizedURL('fr') }}">
-                        <img width="20px" height="20px" src="assets/img/france.png" alt=""> Français
-                    </a>
-                @endif
+                        @if (App::getLocale() == 'fr')
+                            <a class="nav-link myTitle" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
+                                <img width="20px" height="20px" src="assets/img/arabic.png" alt="">
+                                عربي
+                            </a>
+                        @else
+                            <a class="myTitle" href="{{ LaravelLocalization::getLocalizedURL('fr') }}">
+                                <img width="20px" height="20px" src="assets/img/france.png" alt=""> Français
+                            </a>
+                        @endif
 
 
 
@@ -146,14 +147,14 @@
                         </div>
                     </li> --}}
 
-                    <li class="nav-item">
+                    <li class="nav-item lang_item d-md-none">
                         @if (App::getLocale() == 'fr')
                             <a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
-                                عربي
+                                عربي <img width="20px" height="20px" src="assets/img/arabic.png" alt="" class="img_for_lang">
                             </a>
                         @else
                             <a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('fr') }}">
-                                Français
+                                <img width="20px" height="20px" src="assets/img/france.png" alt="" class="img_for_lang_fr"> Français
                             </a>
                         @endif
                     </li>
@@ -171,7 +172,7 @@
         </div>
     @else
         <div class="text-center mt-2 col-md-6 m-auto">
-            <img src="{{ asset('assets/frontEnd/img/SNIM2.jpg') }}" alt="" class="img-fluid">
+            <img src="{{ asset('assets/frontEnd/img/SNIM2.jpg') }}" alt="" class="img-fluid ">
         </div>
     @endif
 

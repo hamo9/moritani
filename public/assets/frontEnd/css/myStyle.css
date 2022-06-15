@@ -599,5 +599,25 @@ a{
 
 .nav-item-phone{
     padding-bottom: 5px;
-    border-bottom: 1px solid rgb(75, 200, 104);
+    border-bottom: 1px solid green;
   }
+
+
+.lang_item{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.img_for_lang{
+    position: relative;
+    top: 5px;
+}
+
+.img_for_lang_fr{
+    position: relative;
+    top: 2px;
+}
