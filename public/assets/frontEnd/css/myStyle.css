@@ -584,7 +584,7 @@ a{
 .custom_nav_bar .nav-item .nav-link{
     color: #fff !important;
     font-size: 17px;
-    font-family: 'Cairo', sans-serif !important;
+    font-family: 'Noto Kufi Arabic', sans-serif !important;
     font-weight: 500 !important;
 }
 
@@ -593,12 +593,11 @@ a{
     font-weight: 600;
 }
 
-
 .top_bar{
-    font-size: 18px !important;
+    font-size: 16px !important;
 }
 
 .nav-item-phone{
     padding-bottom: 5px;
-    border-bottom: 2px solid rgb(6, 199, 51);
+    border-bottom: 1px solid rgb(75, 200, 104);
   }
