@@ -34,7 +34,7 @@
 
                 @if (App::getLocale() == 'fr')
                     <a class="nav-link myTitle" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
-                        <img width="20px" height="20px" src="assets/img/arabic.png" class="img_for_lang" alt="">
+                        <img width="22px" height="22px" src="assets/img/mori.png" class="img_for_lang rounded-pill" alt="">
                         عربي
                     </a>
                 @else
