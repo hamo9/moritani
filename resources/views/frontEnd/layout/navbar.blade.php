@@ -177,8 +177,8 @@
                 <li class="nav-item lang_item d-md-none">
                     @if (App::getLocale() == 'fr')
                         <a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">
-                            عربي <img width="20px" height="20px" src="assets/img/arabic.png" alt=""
-                                class="img_for_lang">
+                            عربي <img width="22px" height="22px" src="assets/img/mori.png" alt=""
+                                class="img_for_lang rounded-pill">
                         </a>
                     @else
                         <a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('fr') }}">
