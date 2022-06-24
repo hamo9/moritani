@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RssFeedController;
 use App\Http\Controllers\Admin\adsController;
+use App\Http\Controllers\SitemapXmlController;
 use App\Http\Controllers\Admin\postsController;
 use App\Http\Controllers\Admin\videosController;
 use App\Http\Controllers\User\frontEndController;
@@ -120,6 +121,7 @@ Route::group(
 
 
     Route::get('feed', [RssFeedController::class, 'feed']);
+    Route::get('/sitemap.xml', [SitemapXmlController::class, 'index']);
 // END FRONT END ROUTES
 
 
